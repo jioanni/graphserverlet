@@ -3,6 +3,7 @@ const app = express()
 const volleyball = require('volleyball')
 const graphqlHTTP = require('express-graphql');
 const { buildSchema } = require('graphql');
+const PORT = process.env.PORT || 3000
 
 app.use(volleyball)
 
@@ -35,5 +36,5 @@ app.use('/graphql', graphqlHTTP({
     graphiql: true,
   }));
 
-app.listen('3000', console.log('potato'))
+app.listen(PORT, console.log('potato'))
 
