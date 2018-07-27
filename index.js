@@ -11,7 +11,7 @@ var schema = buildSchema(`
   type Query {
     hello: String,
     potatoChip: String,
-    number: Float
+    number: Floate
   }
 `);
 
