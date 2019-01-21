@@ -36,5 +36,5 @@ app.use('/graphql', graphqlHTTP({
     graphiql: true,
   }));
 
-app.listen(PORT, console.log('potato'))
+app.listen(PORT, console.log(`Server up and listening on ${PORT}`))
 
